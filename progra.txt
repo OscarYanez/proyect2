@@ -1,0 +1,26 @@
+using System;
+namespace tarea1
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+        int hora = 00;
+        int minuto = 00;
+        int segundo = 00;
+        int aux;
+        
+        
+        Console.WriteLine("MENU \n1)Reloj._.\n2)Cronometro._.\n");
+       string opc = Console.ReadLine();
+        
+        switch(opc){
+        	case "1"://RElOJ
+       		
+                
+                Console.WriteLine(DateTime.Now); 
+               
+            
+        		break;
+        	case "2"://CRONOMETRO
+        		 while (true)//
