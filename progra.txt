@@ -24,3 +24,35 @@ namespace tarea1
         		break;
         	case "2"://CRONOMETRO
         		 while (true)//
+{        	
+        	Console.Clear();
+            Console.WriteLine("Cronometro  {0}:{1}:{2}", hora, minuto, segundo);
+            aux = Environment.TickCount;
+            while (Environment.TickCount <= aux + 1000) ;
+            segundo = segundo + 1;
+            if (segundo == 60)
+            {
+                segundo = 0;
+                minuto = minuto + 1;
+                if (minuto == 60)
+                {
+                    minuto = 0;
+                    hora = hora + 1;
+                    if (hora == 24)
+                    {
+                        hora = 0;
+                    }
+                }
+            }
+       	 }//
+        		break;
+        	default:  Console.WriteLine("FALSE");
+        	break;
+        		
+        }
+        
+   
+       
+		}
+	
+}
